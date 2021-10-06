@@ -6,6 +6,8 @@ public class Figuras {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int opcion = 2;
+		do {
 		
 		System.out.println("Ingrese opcion");
 		System.out.println("1.- Imagen triangulo");
@@ -17,7 +19,6 @@ public class Figuras {
 			System.out.println("Ingrese un numero:  ");
 		
 		}
-		
 		
 		System.out.println(" Ingrese un numero: ");
 		Scanner teclado1 = new Scanner(System.in);
@@ -35,17 +36,25 @@ public class Figuras {
 					
 					for(int fila3 =n; fila>=1; fila=fila +6) {
 						for(int ast3 = fila; ast3>=1;ast3=ast3 +6) {
-							
+							System.out.println("  ***");
+							System.out.println("   **");
+							System.out.println("    *");
+								
 						}
-						
 							
 							for(int fila5 =n; fila>=1; fila=fila +15) {
-								for(int ast5 = fila; ast>=1;ast=ast +15)
-			System.out.println(" * ");
-	}
-		System.out.println();
+								for(int ast5 = fila; ast5>=1;ast5=ast5 +15) {
+									System.out.println("  *****");
+									System.out.println("   ****");
+									System.out.println("    ***");
+									System.out.println("     **");
+									System.out.println("      *");
+}
+							}
+					}
+			}
 		}
-
-	}
-
+	}while(opcion!=2);
+		System.out.println("SALIR");
+}
 }
